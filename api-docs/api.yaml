@@ -5,8 +5,8 @@ info:
   description: 'The API for [AudioStreaming](https://AudioStreaming.dev), the music streaming application that works.'
   contact:
     name: An Phan
-    url: 'https://phanan.net'
-    email: me@phanan.net
+    url: 'https://topmantech.net'
+    email: me@topmantech.net
   license:
     name: MIT
     url: 'https://github.com/AudioStreaming/AudioStreaming/blob/master/LICENSE.md'
@@ -1205,7 +1205,7 @@ components:
         Sample User:
           id: 1
           name: Phan An
-          email: me@phanan.net
+          email: me@topmantech.net
           password: ''
           is_admin: true
           preferences:

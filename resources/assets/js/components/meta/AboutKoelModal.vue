@@ -15,7 +15,7 @@
 
       <p class="author">
         Made with ❤️ by
-        <a href="https://github.com/phanan" rel="noopener" target="_blank">Phan An</a>
+        <a href="https://github.com/topmantech" rel="noopener" target="_blank">Phan An</a>
         and quite a few
         <a href="https://github.com/AudioStreaming/core/graphs/contributors" rel="noopener" target="_blank">awesome</a>&nbsp;<a
           href="https://github.com/AudioStreaming/AudioStreaming/graphs/contributors" rel="noopener" target="_blank"
@@ -35,7 +35,7 @@
 
       <p>
         Loving AudioStreaming? Please consider supporting its development via
-        <a href="https://github.com/users/phanan/sponsorship" rel="noopener" target="_blank">GitHub Sponsors</a>
+        <a href="https://github.com/users/topmantech/sponsorship" rel="noopener" target="_blank">GitHub Sponsors</a>
         and/or
         <a href="https://opencollective.com/AudioStreaming" rel="noopener" target="_blank">OpenCollective</a>.
       </p>
