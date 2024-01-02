@@ -1,0 +1,58 @@
+<?php
+
+namespace App\Http\Controllers\API;
+
+use App\Http\Controllers\Controller;
+use App\Http\Resources\PlaylistFolderResource;
+use App\Http\Resources\PlaylistResource;
+use App\Http\Resources\QueueStateResource;
+use App\Http\Resources\UserResource;
+use App\Models\User;
+use App\Repositories\SettingRepository;
+use App\Repositories\SongRepository;
+use App\Services\ApplicationInformationService;
+use App\Services\ITunesService;
+use App\Services\LastfmService;
+use App\Services\QueueService;
+use App\Services\SpotifyService;
+use App\Services\YouTubeService;
+use Illuminate\Contracts\Auth\Authenticatable;
+
+class DataController extends Controller
+{
+    /** @param User $user */
+    public function __construct(
+        private ITunesService $iTunesService,
+        private SettingRepository $settingRepository,
+        private SongRepository $songRepository,
+        private ApplicationInformationService $applicationInformationService,
+        private QueueService $queueService,
+        private ?Authenticatable $user
+    ) {
+    }
+
+    public function index()
+    {
+        return response()->json([
+            'settings' => $this->user->is_admin ? $this->settingRepository->getAllAsKeyValueArray() : [],
+            'playlists' => PlaylistResource::collection($this->user->playlists),
+            'playlist_folders' => PlaylistFolderResource::collection($this->user->playlist_folders),
+            'current_user' => UserResource::make($this->user, true),
+            'use_last_fm' => LastfmService::used(),
+            'use_spotify' => SpotifyService::enabled(),
+            'use_you_tube' => YouTubeService::enabled(),
+            'use_i_tunes' => $this->iTunesService->used(),
+            'allow_download' => config('AudioStreaming.download.allow'),
+            'supports_transcoding' => config('AudioStreaming.streaming.ffmpeg_path')
+                && is_executable(config('AudioStreaming.streaming.ffmpeg_path')),
+            'cdn_url' => static_url(),
+            'current_version' => AudioStreaming_version(),
+            'latest_version' => $this->user->is_admin
+                ? $this->applicationInformationService->getLatestVersionNumber()
+                : AudioStreaming_version(),
+            'song_count' => $this->songRepository->count(),
+            'song_length' => $this->songRepository->getTotalLength(),
+            'queue_state' => QueueStateResource::make($this->queueService->getQueueState($this->user)),
+        ]);
+    }
+}
