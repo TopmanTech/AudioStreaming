@@ -137,7 +137,7 @@ return [
         'home_url' => 'https://AudioStreaming.dev',
         'docs_url' => 'https://docs.AudioStreaming.dev',
         'sponsor_github_url' => 'https://github.com/users/topmantech/sponsorship',
-        'sponsor_open_collective_url' => 'https://opencollective.com/AudioStreaming',
+        'sponsor_open_collective_url' => 'https://topmantech.com/AudioStreaming',
         'demo' => env('AudioStreaming_DEMO', false),
     ],
 ];

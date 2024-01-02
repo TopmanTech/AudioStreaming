@@ -8,7 +8,7 @@ exports[`renders 1`] = `
     <!--v-if-->
     <p data-v-6b5b01a9="" class="author"> Made with ❤️ by <a data-v-6b5b01a9="" href="https://github.com/topmantech" rel="noopener" target="_blank">Phan An</a> and quite a few <a data-v-6b5b01a9="" href="https://github.com/AudioStreaming/core/graphs/contributors" rel="noopener" target="_blank">awesome</a>&nbsp;<a data-v-6b5b01a9="" href="https://github.com/AudioStreaming/AudioStreaming/graphs/contributors" rel="noopener" target="_blank">contributors</a>. </p>
     <!--v-if--><br data-v-6b5b01a9="" data-testid="sponsor-list">
-    <p data-v-6b5b01a9=""> Loving AudioStreaming? Please consider supporting its development via <a data-v-6b5b01a9="" href="https://github.com/users/topmantech/sponsorship" rel="noopener" target="_blank">GitHub Sponsors</a> and/or <a data-v-6b5b01a9="" href="https://opencollective.com/AudioStreaming" rel="noopener" target="_blank">OpenCollective</a>. </p>
+    <p data-v-6b5b01a9=""> Loving AudioStreaming? Please consider supporting its development via <a data-v-6b5b01a9="" href="https://github.com/users/topmantech/sponsorship" rel="noopener" target="_blank">GitHub Sponsors</a> and/or <a data-v-6b5b01a9="" href="https://topmantech.com/AudioStreaming" rel="noopener" target="_blank">OpenCollective</a>. </p>
   </main>
   <footer data-v-6b5b01a9=""><button data-v-e368fe26="" data-v-6b5b01a9="" data-testid="close-modal-btn" red="" rounded="">Close</button></footer>
 </div>

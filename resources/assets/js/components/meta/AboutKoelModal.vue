@@ -37,7 +37,7 @@
         Loving AudioStreaming? Please consider supporting its development via
         <a href="https://github.com/users/topmantech/sponsorship" rel="noopener" target="_blank">GitHub Sponsors</a>
         and/or
-        <a href="https://opencollective.com/AudioStreaming" rel="noopener" target="_blank">OpenCollective</a>.
+        <a href="https://topmantech.com/AudioStreaming" rel="noopener" target="_blank">OpenCollective</a>.
       </p>
     </main>
 
